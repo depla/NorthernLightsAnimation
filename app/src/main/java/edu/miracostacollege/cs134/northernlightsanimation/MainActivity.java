@@ -8,6 +8,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+/**
+ * MainActivity.java - Tests various types of animations
+ *
+ * @author Dennis La
+ * @version 1.0
+ * 
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ImageView lightsImageView;
@@ -61,5 +68,12 @@ public class MainActivity extends AppCompatActivity {
         shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
 
         lightsImageView.startAnimation(shakeAnim);
+    }
+
+    public void toggleCustomAnim(View v)
+    {
+        customAnim = AnimationUtils.loadAnimation(this, R.anim.custom_anim);
+
+        lightsImageView.startAnimation(customAnim);
     }
 }
