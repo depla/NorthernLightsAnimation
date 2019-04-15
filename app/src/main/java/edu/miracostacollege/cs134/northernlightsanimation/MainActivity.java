@@ -13,7 +13,7 @@ import android.widget.ImageView;
  *
  * @author Dennis La
  * @version 1.0
- * 
+ *
  */
 public class MainActivity extends AppCompatActivity {
 
